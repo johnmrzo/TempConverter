@@ -45,14 +45,14 @@ class TempConverter {
   func convert() {
     if isConvertingCtoF {
       convertCtoF()
-      
-      if Double(convertedTemp!) <= -273.15 {
+      print("HERE:", convertedTemp!)
+      if convertedTemp! <= -273 {
         convertedTemp = nil
       }
     } else {
       convertFtoC()
       
-      if Double(convertedTemp!) <= -459.67 {
+      if convertedTemp! <= -459 {
         convertedTemp = nil
       }
     }

@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State private var Value = ""
+  @ObservedObject var viewController = ViewController()
+  @State var inputTemp: String = ""
   
   var body: some View {
     ZStack {
@@ -24,15 +25,22 @@ struct ContentView: View {
         Spacer()
         
         HStack {
-          Text("0.0")
-          Text("ºF")
+          if viewController.isConvertingCtoF {
+            Text("\(viewController.convertedTempString) ºF")
+              .font(.largeTitle)
+              .fontWeight(.ultraLight)
+          } else {
+            Text("\(viewController.convertedTempString) ºC")
+              .font(.largeTitle)
+              .fontWeight(.ultraLight)
+          }
         }
         
         Spacer()
         
         Text("Enter Temperature:")
         HStack {
-          TextField("Temp", text: $Value)
+          TextField("Temp", text: $inputTemp)
             .frame(width: 90.0)
             .multilineTextAlignment(.center)
             .border(Color.white)
@@ -41,7 +49,21 @@ struct ContentView: View {
         
         Spacer()
         
-        Button(action: {}) {
+        HStack(alignment: .center) {
+          Text("ºF -> ºC")
+            .fontWeight(.thin)
+          Toggle(isOn: $viewController.isConvertingCtoF) {
+            Text("")
+          }
+          .labelsHidden()
+          .frame(width: 50)
+          .padding()
+          Text("ºC -> ºF")
+           .fontWeight(.thin)
+        }
+        .padding()
+        
+        Button(action: { viewController.inputTempString = inputTemp; viewController.convert()}) {
           Text("Convert")
         }
         .padding(.all)
