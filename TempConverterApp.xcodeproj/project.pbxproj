@@ -11,6 +11,7 @@
 		EC6670632AB14EDF0024DDD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6670622AB14EDF0024DDD5 /* ContentView.swift */; };
 		EC6670652AB14EE10024DDD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6670642AB14EE10024DDD5 /* Assets.xcassets */; };
 		EC6670682AB14EE10024DDD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6670672AB14EE10024DDD5 /* Preview Assets.xcassets */; };
+		EC6670722AB14FC50024DDD5 /* TempConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6670712AB14FC50024DDD5 /* TempConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		EC6670622AB14EDF0024DDD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EC6670642AB14EE10024DDD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC6670672AB14EE10024DDD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC6670712AB14FC50024DDD5 /* TempConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		EC66705F2AB14EDF0024DDD5 /* TempConverterApp */ = {
 			isa = PBXGroup;
 			children = (
-				EC6670602AB14EDF0024DDD5 /* TempConverterAppApp.swift */,
-				EC6670622AB14EDF0024DDD5 /* ContentView.swift */,
+				EC6670702AB14F890024DDD5 /* Views */,
+				EC66706F2AB14F7F0024DDD5 /* Controllers */,
+				EC66706E2AB14F710024DDD5 /* Models */,
 				EC6670642AB14EE10024DDD5 /* Assets.xcassets */,
 				EC6670662AB14EE10024DDD5 /* Preview Content */,
 			);
@@ -65,6 +68,30 @@
 				EC6670672AB14EE10024DDD5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC66706E2AB14F710024DDD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC6670712AB14FC50024DDD5 /* TempConverter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC66706F2AB14F7F0024DDD5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC6670702AB14F890024DDD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC6670602AB14EDF0024DDD5 /* TempConverterAppApp.swift */,
+				EC6670622AB14EDF0024DDD5 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6670722AB14FC50024DDD5 /* TempConverter.swift in Sources */,
 				EC6670632AB14EDF0024DDD5 /* ContentView.swift in Sources */,
 				EC6670612AB14EDF0024DDD5 /* TempConverterAppApp.swift in Sources */,
 			);
