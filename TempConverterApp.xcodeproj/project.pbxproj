@@ -13,6 +13,7 @@
 		EC6670682AB14EE10024DDD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6670672AB14EE10024DDD5 /* Preview Assets.xcassets */; };
 		EC6670722AB14FC50024DDD5 /* TempConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6670712AB14FC50024DDD5 /* TempConverter.swift */; };
 		EC6670742AB1647E0024DDD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6670732AB1647E0024DDD5 /* ViewController.swift */; };
+		EC6670782AB21B910024DDD5 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6670772AB21B910024DDD5 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		EC6670672AB14EE10024DDD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC6670712AB14FC50024DDD5 /* TempConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConverter.swift; sourceTree = "<group>"; };
 		EC6670732AB1647E0024DDD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC6670772AB21B910024DDD5 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				EC6670602AB14EDF0024DDD5 /* TempConverterAppApp.swift */,
 				EC6670622AB14EDF0024DDD5 /* ContentView.swift */,
+				EC6670772AB21B910024DDD5 /* InfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				EC6670722AB14FC50024DDD5 /* TempConverter.swift in Sources */,
 				EC6670632AB14EDF0024DDD5 /* ContentView.swift in Sources */,
 				EC6670742AB1647E0024DDD5 /* ViewController.swift in Sources */,
+				EC6670782AB21B910024DDD5 /* InfoView.swift in Sources */,
 				EC6670612AB14EDF0024DDD5 /* TempConverterAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
